@@ -1,0 +1,365 @@
+
+header{
+    background-color: #f3f5fc;
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+}
+
+.logoAlura{
+    height: 20px;
+    width: 20px;
+    position: relative;
+}
+
+header p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color:navy;
+    text-shadow: 3px 3px 3px #6286b3;
+    margin: 10px 10px 10px 10px;
+
+}
+
+header p:before{
+    content: "⚠  ";
+}
+
+body{
+    background-color: #f3f5fc;
+    width: 1920px;
+    height: 920px;
+    display: inline-block;
+    text-align: center;
+   
+}
+
+.caja-texto{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    justify-content: center;
+    width: 1920px;
+    
+    
+}
+
+#cuadro1{
+    width: 40%;
+    height: 425px;
+    position: relative;
+    margin: 15px 10px;
+    padding: 10px;
+    background-color:whitesmoke;
+    border-color:lightgray;
+    opacity: 0.8;
+    text-align: center;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    justify-content: center;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: #0a3871;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+#cuadro1:hover{
+    
+    box-shadow: 5px 5px 5px gray;
+
+}
+
+#cuadro1:active{
+    border-color:#c6cee7d6;
+
+}
+
+
+#cuadro2{
+    position: relative;
+    width: 25%;
+    height: 560px;
+    vertical-align: top;  
+    margin: 15px 10px;
+    border-color: lightgrey;
+    padding: 10px;
+    text-align: center;
+    justify-content:center;
+    word-wrap: break-word;
+    overflow: wrap;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+    border-radius: 15px;
+    cursor: text;
+    transition: 0.3s;
+
+}
+
+#cuadro2:hover{
+    border-color:darkgray;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+#candadoCerrado{
+    position: absolute;
+    width: 90px;
+    height: 105px;
+    top: 120px;
+    left: 1320px;
+    transition: 0.3s;
+}
+
+#candadoAbierto{
+    position: absolute;
+    width: 90px;
+    height: 105px;
+    top: 120px;
+    left: 1320px;
+    transition: 0.3s;
+}
+
+
+
+
+#alertaIngreso{
+    position: absolute;
+    top: 540px;
+    left: 1280px;
+    color:rgb(18, 97, 123);
+    vertical-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+#alertaNotexto{
+    position: fixed;
+    top: 240px;
+    left: 1240px;
+    color:rgb(197, 79, 79);
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    
+}
+
+
+.boton-encrip{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: #c6cee7d6;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: #f3f5fc;
+    background-color: navy;
+    position: absolute;
+    top: 590px;
+    left: 380px;
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.3s;
+}
+
+.boton-encrip:hover{
+    box-shadow: 3px 3px 3px gray;
+    transform: scale(1.1);
+}
+
+.boton-desencrip{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: #c6cee7d6;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    background-color:#c6cee7d6;
+    position: absolute;
+    top: 590px;
+    left: 780px;
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.3s;
+
+} 
+
+.boton-desencrip:hover{
+    box-shadow: 3px 3px 3px gray;
+    transform: scale(1.1);
+}
+
+.boton-copiar{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: #c6cee7d6;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    background-color:cadetblue;
+    position: absolute;
+    top: 590px;
+    left: 1260px;
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.3s;
+
+}
+
+.boton-copiar:hover{
+    box-shadow: 3px 3px 3px gray;
+    transform: scale(1.1);
+
+}
+
+.instruccion{
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.05em;
+    font-weight: bold;
+    color:gray;
+    top: 550px;
+    left: 540px;
+
+}
+
+.instruccion:before{
+    content: "⚠ ";
+
+}
+
+
+@media screen and (max-width: 480px){
+
+    header {
+
+        height: 50px;
+        width: 400px;
+        display: block;
+
+    }
+
+    .logoAlura {
+        margin: 15px 0;
+        height: 15px;
+        width: 15px;
+    }
+
+    .titulo {
+        margin: 15px 15px;
+        font-size: 1em;
+        font-weight: bold;
+        width: 360px;
+
+    }
+
+    body {
+        width: 480px;
+        display: block;
+    }
+
+    .cajas-texto{
+        width: 400px;
+        display: block;
+    }
+
+    
+    #cuadro1{
+        width: 65%;
+        margin: 10px 10px 60px;
+        height: 200px;
+        font-weight: lighter;
+    }
+
+    #cuadro2{
+        width: 65%;
+        margin: 30px 10px 10px;
+        height: 240px;
+        font-weight: lighter;
+
+     }
+
+     .botones{
+        width: 400px;
+        
+    }
+
+
+    .boton-encrip{
+        margin-right: 10px;
+        margin-left: 10px;
+        top: 350px;
+        left: 50px;
+        width: 130px;
+
+        }
+    .boton-desencrip{
+        margin-right: 10px;
+        margin-left: 10px;
+        top: 350px;
+        left: 200px;
+        width: 130px;
+    
+        }
+
+    .boton-copiar{
+        margin-right: 10px;
+        margin-left: 10px;
+        top: 615px;
+        left: 120px;
+        width: 130px;
+            
+        }
+
+    .instruccion{
+        font-size: 0.8em;
+        top: 330px;
+        left: 75px;
+    }
+
+
+
+    #alertaNotexto{
+       
+        top: 470px;
+        left: 90px;
+        font-size: 1em;
+        
+    }
+
+    #candadoCerrado{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 425px;
+        left: 75px;
+    }
+    
+    #candadoAbierto{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 425px;
+        left: 75px;
+    }
+
+
+
+    }
+
+

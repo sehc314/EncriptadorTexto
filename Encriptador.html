@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href ="reset.css">
+    <link rel="stylesheet" href="Style-Encriptador.css">
+  </head>
+
+
+<body>
+    <div> 
+        <header>
+            <h1 class="logoAlura"> <img src="imagenes/Imagen1.png"> </h1>
+            <p class="titulo">ENCRIPTADOR DE TEXTO</p>
+        </header>
+    </div>
+
+    
+    <div class="cajas-texto"> 
+        <input type="text" id="cuadro1" placeholder="Escribe o pega tu mensaje aquí..."  >
+        <input type="text" id="cuadro2" readonly placeholder="......" value= "......"> 
+    </div>
+
+    <div>
+        <p id="alertaIngreso"></p>
+        <p id="alertaNotexto"></p>
+    </div>
+    
+    <div class="botones">
+        <button onclick= "encriptar(); validarIngresoTexto(); mostrarImagen('candadoCerrado'); ocultarImagen('candadoAbierto');" class="boton-encrip">Encriptar</button>
+        <button onclick= "desencriptar(); validarIngresoTexto(); mostrarImagen('candadoAbierto'); ocultarImagen('candadoCerrado')" class="boton-desencrip">Desencriptar</button>
+        <button onclick="copiarMensaje();" class="boton-copiar">Copiar</button>
+    </div>
+
+    <p class="instruccion">No escribir letras mayúsculas ni acentos</p>     
+
+    <img id="candadoCerrado" src="imagenes/CandadoCerrado.JPG">
+    <img id="candadoAbierto" src="imagenes/CandadoAbierto.JPG">
+      
+  
+    <script src="appencrip.js"></script>
+
+</body>
+
+<footer>
+
+
+</footer>
+
+</html>
